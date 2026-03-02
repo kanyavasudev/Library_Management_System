@@ -1,15 +1,14 @@
 import mysql.connector
 import pandas as pd
 
-def create_connection():
-    """Connect to MySQL database"""
-    try:
-        conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Kanya#005",  # ⚠️ CHANGE THIS
-            database="library_management"
-        )
+def get_connection():
+    return mysql.connector.connect(
+        host=st.secrets["DB_HOST"],
+        user=st.secrets["DB_USER"],
+        password=st.secrets["DB_PASSWORD"],
+        database=st.secrets["DB_NAME"],
+        port=int(st.secrets["DB_PORT"])
+    )
         print("✅ Connected to database successfully!")
         return conn
     except mysql.connector.Error as err:
