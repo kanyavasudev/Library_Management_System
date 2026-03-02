@@ -1,3 +1,4 @@
+```css
 /* ── BACKGROUND ─────────────────────────────────── */
 .stApp {
     background: linear-gradient(135deg, #fce4ec, #e8eaf6, #e0f7fa, #f9fbe7);
@@ -43,27 +44,4 @@ h2 {
 .stDataFrame {
     border-radius: 10px;
     border: 1px solid #ce93d8;
-}
-stApp, .stApp * {
-    color: #2d2d2d !important;
-}
-
-h1 {
-    color: #4a148c !important;
-}
-
-h2 {
-    color: #6a1b9a !important;
-}
-
-.stButton > button {
-    color: white !important;
-}
-.stTextInput > div > input,
-.stNumberInput > div > input,
-.stDateInput > div > input {
-    background-color: white !important;
-    color: #2d2d2d !important;
-    border-radius: 8px;
-    border: 1px solid #ce93d8 !important;
 }
